@@ -1,0 +1,27 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+
+
+/* App.css */
+.App {
+  flex: 1;
+ 
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+/* Keep your logo styles */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}

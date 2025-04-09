@@ -1,0 +1,141 @@
+/* Navbar Container */
+.navbar {
+    background: linear-gradient(to bottom, #0d151e, #feb47b);
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hamburger Menu (3 slashes) */
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Hamburger Menu Animation */
+  .bar.change:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .bar.change:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .bar.change:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Navigation Links */
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin-left: 20px;
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-link:hover {
+    color: #ff6347; /* Change to your preferred hover color */
+  }
+  
+  /* Shopping Cart Icon */
+  .navbar-cart {
+    font-size: 24px;
+    cursor: pointer;
+    color: white; /* Set the icon color */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .navbar-cart:hover {
+    color: #ff6347; /* Change icon color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+  }
+  /* Shopping Cart Icon */
+.navbar-cart {
+  position: relative;
+  font-size: 24px;
+  cursor: pointer;
+  color: white; /* Set the icon color */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar-cart:hover {
+  color: #ff6347; /* Change icon color on hover */
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+/* Cart Count */
+.cart-count {
+  position: absolute;
+  top: -10px; /* Adjust this value to position the count correctly */
+  right: -10px; /* Adjust this value to position the count correctly */
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .navbar-toggle {
+      display: flex;
+    }
+  
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #444;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .navbar-menu.active {
+      display: flex;
+    }
+  
+    .navbar-item {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
